@@ -9,7 +9,7 @@
       "dependencies": "*",
       "devDependencies": "*"
     },
-    "tsconfig.base.json": "*",
+    "tsconfig.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
@@ -22,5 +22,16 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "web": {
+      "tags": []
+    },
+    "web-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web"]
+    },
+    "components": {
+      "tags": []
+    }
+  }
 }
